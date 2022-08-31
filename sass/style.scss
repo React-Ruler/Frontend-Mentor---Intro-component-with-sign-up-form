@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+// Import Google Font
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+// Start coding Bulma Variables here
+
+$family-sans-serif: "Poppins", sans-serif;
+
+$family-primary: $family-sans-serif;
+
+// Start coding Bulma Variables here
+
+$body-family: $family-primary;
+$body-size: 16px !important;
+
+// Screen Sizes
+//$desktop: 1440px + (2 * $gap);
+
+// Add Custom CSS Here
+.hero-image {
+  background-image: url("../assets/images/bg-intro-desktop.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: hsl(0, 100%, 74%);
+}
+
+h1.title {
+  font-size: 55px !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+  padding-bottom: 20px !important;
+}
+
+p.subtitle {
+  font-size: 16px !important;
+  font-weight: 600px !important;
+  color: #fff !important;
+}
+
+p.terms-link {
+  color: hsl(246, 25%, 77%) !important;
+  font-weight: 500 !important;
+  font-size: 9px !important;
+}
+
+p.terms-link a {
+  color: hsl(0, 100%, 74%) !important;
+  text-decoration-color: hsl(0, 100%, 74%) !important;
+  text-decoration-line: none;
+}
+
+p.tutorial-link img {
+  vertical-align: middle !important;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
+.footer a {
+  color: #fff !important;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+// Import only what you need from Bulma
+
+@import "../node_modules/bulma/sass/utilities/_all.sass";
+@import "../node_modules/bulma/sass/base/_all.sass";
+@import "../node_modules/bulma/sass/elements/_all.sass";
+@import "../node_modules/bulma/sass/form/_all.sass";
+@import "../node_modules/bulma/sass/components/_all.sass";
+@import "../node_modules/bulma/sass/grid/_all.sass";
+@import "../node_modules/bulma/sass/helpers/_all.sass";
+@import "../node_modules/bulma/sass/layout/_all.sass";
